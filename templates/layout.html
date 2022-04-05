@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    {% block title %}
+
+        {% if title %}
+            <title>Naruto - {{ title }}</title>
+            {% else %}
+            <title>Naruto Blog</title>
+        {% endif%}
+
+{% endblock title %}
+</head>
+<body>
+
+<div class="wraper">
+
+{% block menu %}
+
+{% endblock menu %}
+
+
+{% block content %}
+
+{% endblock content %}
+
+
+{% block main_page %}
+
+{% endblock main_page %}
+
+
+{% block footer %}
+
+{% endblock footer %}
+
+</div>
+</body>
+</html>
