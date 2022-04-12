@@ -77,6 +77,7 @@ html, body{
 }
 
 
+
 /* MAIN_PAGE */
 
 .info{
@@ -159,4 +160,56 @@ ul a{
     background-color: black;
     color: red;
     flex: 0 0 auto;
+}
+
+/* FORM and BUTTON */
+
+.form-post-title{
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+input[placeholder]{
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+
+.btn_sign_in{
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+.form-group_button{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-muted {
+    font-size: 15px;
+    color: red;
+    margin-right: 10px;
+}
+
+/* LOGIN_FORM */
+.register_form{
+    height: 200px;
+    margin: 0 auto;
+    margin: 50px 0;
+    align-items: center;
+    text-align: center;
+}
+
+
+.legend {
+    font-size: 25px;
+    margin-bottom: 20px;
 }
