@@ -4,7 +4,9 @@
 }
 
 
-html, body{
+html,
+body
+.wrapper{
     height: 100%;
 }
 
@@ -28,7 +30,6 @@ html, body{
 .main_menu a{
     text-decoration:none;
     color: red;
-    front-weight: 400;
 }
 
 
@@ -62,7 +63,7 @@ html, body{
 .wrapper{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
     background: url('../img/fon6.jpg') 50%/100% auto no-repeat;
 }
 
@@ -73,13 +74,35 @@ html, body{
 
 /* CONTENT */
 
+
 .content{
-    width: 70%;
-    margin: 100px auto 0;
+    width: 40%;
+    align-items: left;
+    margin: 0 auto;
     flex: 1 0 auto;
+    text-align: left;
+    min-height: 100vh;
+}
+
+.content-section{
+    display: flex;
+    weight: 100%;
+    justify-content: space-between;
+    margin: 50px auto 0;
 }
 
 
+.card{
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    border: none;
+}
+
+.account-img{
+    width: 200px;
+    border-radius: 50px;
+}
 
 /* MAIN_PAGE */
 
@@ -160,6 +183,7 @@ ul a{
     background-color: black;
     color: red;
     flex: 0 0 auto;
+
 }
 
 /* FORM and BUTTON */
@@ -189,7 +213,7 @@ input[placeholder]{
 
 .form-group_button{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -214,7 +238,7 @@ input[placeholder]{
 
 /* LOGIN_FORM */
 .login_form{
-    margin: 70px 0;
+    margin: 60px 0;
     align-items: center;
     text-align: center;
 }
@@ -230,15 +254,55 @@ input[placeholder]{
 
 .form-check{
     display: flex;
-    margin-left: 190px;
+    margin-left: 10px;
     text-align: left;
 }
 
-.content{
-    width: 80%;
-    align-items: center;
-    margin: 0 auto;
-    flex: 1 0 auto;
-    text-align: center;
+
+.post1{
+    margin: 20px auto;
+    text-align:center;
+
 }
+
+.form-post-title{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+input,
+input[placeholder]{
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+
+.form-post-textarea{
+    width: 100%;
+    height: 260px;
+    border-radius: 10px;
+}
+
+
+textarea[placeholder]{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+
+.btn_new_post{
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+
+
 

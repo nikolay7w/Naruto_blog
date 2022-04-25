@@ -22,16 +22,16 @@ class User(db.Model, UserMixin):
     def __repr__(self):
         return f'User({self.id}, {self.username}, {self.email}, {self.password}, {self.image_file})'
 
-    class Post(db.Model):
+class Post(db.Model):
 
-        __tablename__ = 'posts'
+    __tablename__ = 'posts'
 
-        id = db.Column(db.Integer, primary_key=True)
-        title = db.Column(db.String(100), nullable=False)
-        date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-        content = db.Column(db.Text(60), nullable=False)
-        image_post = db.Column(db.String(30), nullable=True, default='default.jpg')
-        user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(100), nullable=False)
+    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    content = db.Column(db.Text(60), nullable=False)
+    image_post = db.Column(db.String(30), nullable=True, default='default.jpg')
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
-        def __repr__(self):
+    def __repr__(self):
             return f'User({self.title}, {self.date_posted}, {self.image_post})'
